@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Task </title>
+    <style>
+        body{
+            font-family:Arial,sans-serif;
+            padding : 20px;
+        }
+
+        h2{
+            background-color : darkgreen;
+            color:white;
+            padding : 10px;
+            width : fit-content;
+            clip-path : polygon(0 0, 90% 0, 100% 50%, 90% 100%, 0% 100%);
+        }
+
+        p{
+            margin-bottom : 10px;
+        }
+
+        .answer{
+            background-color: #f0f0f0;
+            padding : 10px;
+            border-left : 4px solid green;
+            margin-bottom : 20px;
+        }
+
+        .justified{
+            text-align : justify;
+        }
+
+        .shadow-text{
+            text-shadow:2px 2px 5px rgba(0,0,0,0.5);
+        }
+
+        .font-demo{
+            font: italic bold 16px/1.5 Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h2>Task</h2>
+    <p><strong>1. How to set justify property in the paragraph elements?</strong></p>
+    <div class="answer">
+    Use the <code>text-align: justify;</code> CSS property.<br><br>
+    Example:
+    <pre><code>p {
+  text-align: justify;
+}</code></pre>
+    <p class="justified">This paragraph text is justified. It is aligned evenly along both the left and right margins.</p>
+  </div>
+    <p><strong>2. How to add shadow to text?</strong></p>
+  <div class="answer">
+    Use the <code>text-shadow</code> CSS property.<br><br>
+    Example:
+    <pre><code>p {
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}</code></pre>
+    <p class="shadow-text">This text has a shadow effect.</p>
+  </div>
+
+  <p><strong>3. How to specify all the font properties in one declaration?</strong></p>
+  <div class="answer">
+    Use the <code>font</code> shorthand property:<br><br>
+    Example:
+    <pre><code>p {
+  font: italic bold 16px/1.5 Arial, sans-serif;
+}</code></pre>
+    <p class="font-demo">This text uses the font shorthand property.</p>
+  </div>
+</body>
+</html>

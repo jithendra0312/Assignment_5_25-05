@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Image Bullet List</title>
+  <style>
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    li {
+      font-size: 20px;
+      font-weight: bold;
+      margin: 10px 0;
+      position: relative;
+      padding-left: 40px;
+    }
+
+    li::before {
+      content: "";
+      background: url("star_bullet.png") no-repeat center center;
+      background-size: 24px 24px;
+      width: 24px;
+      height: 24px;
+      position: absolute;
+      left: 0;
+      top: 2px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Task</h2>
+  <ul>
+    <li>Hummus</li>
+    <li>Pita</li>
+    <li>Green salad</li>
+    <li>Halloumi</li>
+  </ul>
+
+</body>
+</html>
